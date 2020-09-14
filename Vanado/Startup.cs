@@ -45,6 +45,7 @@ namespace Vanado
         {
             app.UseExceptionHandler("/error");
 
+            // TODO: Maybe remove.
             app.UseCors(
                 options => options.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod()
             );
@@ -59,7 +60,7 @@ namespace Vanado
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                    pattern: "api/{controller}/{action=Index}/{id?}");
             });
 
             app.UseSpa(spa =>

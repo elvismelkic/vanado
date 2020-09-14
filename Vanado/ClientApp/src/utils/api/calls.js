@@ -1,7 +1,6 @@
 import handleError from "./apiErrorHandler";
 
-// const mainUrl = "http://localhost:4000/api/"
-const mainUrl = "https://localhost:44325/";
+const mainUrl = "https://localhost:44325/api/";
 
 export async function fetchAll(route, query) {
   const URI = `${mainUrl}${route}${query !== undefined ? "?" + query : ""}`;
