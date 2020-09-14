@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Vanado.DAL;
+using Vanado.Interfaces;
+using Vanado.Services;
 
 namespace Vanado
 {
@@ -20,8 +23,15 @@ namespace Vanado
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllersWithViews();
+            services.AddCors();
+            services.AddControllers();
+            services.AddScoped<IMachineService, MachineService>();
+            services.AddScoped<IFailureService, FailureService>();
+            services.AddScoped<IFileService, FileService>();
+            services.AddScoped<IMachineRepository, MachineRepository>();
+            services.AddScoped<IFailureRepository, FailureRepository>();
+            services.AddScoped<IFileRepository, FileRepository>();
+            services.AddScoped<IDbConnectionProvider, DbConnectionProvider>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
