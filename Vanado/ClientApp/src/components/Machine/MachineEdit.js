@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import MachineForm from "./MachineForm";
-import ModalContainer from "../ModalContainer";
-import SomethingWentWrongModal from "../SomethingWentWrongModal";
+import ModalContainer from "../Modal/ModalContainer";
+import SomethingWentWrongModal from "../Modal/SomethingWentWrongModal";
 import { fetchOne, editOne } from "../../utils/api/calls";
 
 export default function MachineEdit({ history, match }) {

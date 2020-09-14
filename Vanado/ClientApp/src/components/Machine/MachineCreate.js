@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import MachineForm from "./MachineForm";
-import ModalContainer from "../ModalContainer";
-import SomethingWentWrongModal from "../SomethingWentWrongModal";
+import ModalContainer from "../Modal/ModalContainer";
+import SomethingWentWrongModal from "../Modal/SomethingWentWrongModal";
 import { addOne } from "../../utils/api/calls";
 
 export default function NewMachine({ history }) {

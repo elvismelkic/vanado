@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { fetchAll, fetchOne, editOne } from "../../utils/api/calls";
 import FailureForm from "./FailureForm";
-import ModalContainer from "../ModalContainer";
-import SomethingWentWrongModal from "../SomethingWentWrongModal";
+import ModalContainer from "../Modal/ModalContainer";
+import SomethingWentWrongModal from "../Modal/SomethingWentWrongModal";
 
 export default function FailureEdit({ history, match }) {
   const failureId = match.params.id;

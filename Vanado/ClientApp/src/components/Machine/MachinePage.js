@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FailuresList from "../Failure/FailuresList";
-import DeleteModal from "../DeleteModal";
-import ModalContainer from "../ModalContainer";
+import DeleteModal from "../Modal/DeleteModal";
+import ModalContainer from "../Modal/ModalContainer";
 import { fetchOne, deleteOne } from "../../utils/api/calls";
 
 export default function MachinePage(props) {

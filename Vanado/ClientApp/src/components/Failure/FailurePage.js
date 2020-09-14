@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FailureStatus from "./FailureStatus";
-import DeleteModal from "../DeleteModal";
-import ModalContainer from "../ModalContainer";
+import DeleteModal from "../Modal/DeleteModal";
+import ModalContainer from "../Modal/ModalContainer";
 import { fetchOne, deleteOne, upload } from "../../utils/api/calls";
 
 export default function FailurePage(props) {

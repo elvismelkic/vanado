@@ -2,8 +2,8 @@ import React, { Fragment, useState, useEffect } from "react";
 import { fetchAll, addOne } from "../../utils/api/calls";
 import { parse } from "query-string";
 import FailureForm from "./FailureForm";
-import ModalContainer from "../ModalContainer";
-import SomethingWentWrongModal from "../SomethingWentWrongModal";
+import ModalContainer from "../Modal/ModalContainer";
+import SomethingWentWrongModal from "../Modal/SomethingWentWrongModal";
 
 export default function FailureCreate({ history, location }) {
   const machineId = parseInt(parse(location.search).machine);
