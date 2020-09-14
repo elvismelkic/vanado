@@ -4,12 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using WebApplication3.CustomExceptions;
-using WebApplication3.Interfaces;
-using WebApplication3.Models;
-using WebApplication3.Schemas;
+using Vanado.CustomExceptions;
+using Vanado.Interfaces;
+using Vanado.Models;
+using Vanado.Schemas;
 
-namespace WebApplication3.DAL
+namespace Vanado.DAL
 {
     public class MachineRepository : IMachineRepository
     {

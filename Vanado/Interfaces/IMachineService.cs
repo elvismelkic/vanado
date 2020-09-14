@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using WebApplication3.DAL;
-using WebApplication3.Models;
+using Vanado.DAL;
+using Vanado.Models;
 
-namespace WebApplication3.Interfaces
+namespace Vanado.Interfaces
 {
     public interface IMachineService
     {

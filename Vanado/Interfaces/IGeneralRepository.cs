@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace WebApplication3.Interfaces
+namespace Vanado.Interfaces
 {
     public interface IGeneralRepository<TEntity> where TEntity : class
     {

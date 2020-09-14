@@ -6,12 +6,12 @@ using System.Linq;
 using System.Reflection.Emit;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
-using WebApplication3.DAL;
-using WebApplication3.Interfaces;
-using WebApplication3.Models;
-using WebApplication3.Services;
+using Vanado.DAL;
+using Vanado.Interfaces;
+using Vanado.Models;
+using Vanado.Services;
 
-namespace WebApplication3.Controllers
+namespace Vanado.Controllers
 {
     [ApiController]
     [Route("failures")]

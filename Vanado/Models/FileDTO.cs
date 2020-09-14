@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication3.Models
+namespace Vanado.Models
 {
     public class FileDTO
     {

@@ -6,11 +6,11 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using WebApplication3.DAL;
-using WebApplication3.Interfaces;
-using WebApplication3.Models;
+using Vanado.DAL;
+using Vanado.Interfaces;
+using Vanado.Models;
 
-namespace WebApplication3.Services
+namespace Vanado.Services
 {
     public class FailureService : IFailureService
     {

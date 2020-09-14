@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebApplication3.Models;
+using Vanado.Models;
 
-namespace WebApplication3.Interfaces
+namespace Vanado.Interfaces
 {
     public interface IFileRepository
     {

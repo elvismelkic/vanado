@@ -13,11 +13,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Npgsql;
-using WebApplication3.DAL;
-using WebApplication3.Models;
-using WebApplication3.Services;
+using Vanado.DAL;
+using Vanado.Models;
+using Vanado.Services;
 
-namespace WebApplication3.CustomExceptions
+namespace Vanado.CustomExceptions
 {
     public class ErrorResponse
     {

@@ -13,12 +13,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Npgsql;
-using WebApplication3.CustomExceptions;
-using WebApplication3.DAL;
-using WebApplication3.Models;
-using WebApplication3.Services;
+using Vanado.CustomExceptions;
+using Vanado.DAL;
+using Vanado.Models;
+using Vanado.Services;
 
-namespace WebApplication3.Controllers
+namespace Vanado.Controllers
 {
     [ApiExplorerSettings(IgnoreApi = true)]
     public class ErrorsController : ControllerBase

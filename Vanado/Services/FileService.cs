@@ -5,12 +5,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using WebApplication3.CustomExceptions;
-using WebApplication3.DAL;
-using WebApplication3.Interfaces;
-using WebApplication3.Models;
+using Vanado.CustomExceptions;
+using Vanado.DAL;
+using Vanado.Interfaces;
+using Vanado.Models;
 
-namespace WebApplication3.Services
+namespace Vanado.Services
 {
     public class FileService : IFileService
     {

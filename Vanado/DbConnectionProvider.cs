@@ -1,8 +1,8 @@
 ﻿using Npgsql;
 using System.Data;
-using WebApplication3.Interfaces;
+using Vanado.Interfaces;
 
-namespace WebApplication3
+namespace Vanado
 {
     public class DbConnectionProvider : IDbConnectionProvider
     {
