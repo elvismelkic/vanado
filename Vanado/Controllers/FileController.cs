@@ -17,7 +17,7 @@ using Vanado.Services;
 namespace Vanado.Controllers
 {
     [ApiController]
-    [Route("files")]
+    [Route("api/files")]
     public class FileController : ControllerBase
     {
         private readonly IFileService _fileService;

@@ -16,7 +16,7 @@ using Vanado.Services;
 namespace Vanado.Controllers
 {
     [ApiController]
-    [Route("machines")]
+    [Route("api/machines")]
     public class MachineController : ControllerBase
     {
         private readonly IMachineService _machineService;

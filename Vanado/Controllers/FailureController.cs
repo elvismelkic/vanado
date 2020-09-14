@@ -14,7 +14,7 @@ using Vanado.Services;
 namespace Vanado.Controllers
 {
     [ApiController]
-    [Route("failures")]
+    [Route("api/failures")]
     public class FailureController : ControllerBase
     {
         private readonly IFailureService _failureService;
