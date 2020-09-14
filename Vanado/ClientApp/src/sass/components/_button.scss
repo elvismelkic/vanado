@@ -1,0 +1,36 @@
+.btn {
+  height: 3rem;
+  margin: 3rem 2rem;
+  padding: 0 1rem;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+
+  &--link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 3rem;
+  }
+
+  &--upload {
+    margin: 0 2rem;
+  }
+
+  &--add {
+    background-color: $color-green;
+  }
+
+  &--edit {
+    background-color: $color-primary-light;
+  }
+
+  &--delete {
+    background-color: $color-delete;
+  }
+}

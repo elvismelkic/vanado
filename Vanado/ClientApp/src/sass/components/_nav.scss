@@ -1,0 +1,50 @@
+.nav {
+  position: fixed;
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $color-primary-grey;
+  z-index: 9000;
+
+  &__list {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: block;
+    padding: 1rem;
+    background-color: $color-secondary;
+
+    &:link,
+    &:visited {
+      color: $color-white;
+      font-size: 1.4rem;
+
+      @include nav-link;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      border-bottom: 1px solid $color-primary-dark;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 1rem;
+    color: $color-grey-light;
+
+    @include nav-link;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+
+    &--active {
+      color: $color-white;
+      background-color: $color-primary-dark;
+    }
+  }
+}
