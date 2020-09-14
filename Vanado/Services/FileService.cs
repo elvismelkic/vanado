@@ -23,7 +23,7 @@ namespace Vanado.Services
 
         private string GenerateFailureFolderPath(int failureId)
         {
-            return $"C:\\Users\\Tola\\elvis\\vanado-task-frontend\\public\\images\\failure_{failureId}\\";
+            return $"./ClientApp/public/files/failure_{failureId}/";
         }
 
         public IEnumerable<FileDTO> GetForFailure(int failureId)

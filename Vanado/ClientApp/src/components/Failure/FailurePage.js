@@ -155,7 +155,7 @@ const ImagesContainer = ({
   };
 
   const handleClick = (image) => {
-    setModalImage(`/images/failure_${image.failureId}/${image.name}`);
+    setModalImage(`/files/failure_${image.failureId}/${image.name}`);
     setIsImageModalActive(true);
   };
 
@@ -179,7 +179,7 @@ const ImagesContainer = ({
                   X
                 </button>
                 <img
-                  src={`/images/failure_${image.failureId}/${image.name}`}
+                  src={`/files/failure_${image.failureId}/${image.name}`}
                   alt="Failure"
                   className="failure__img"
                   onClick={() => {
@@ -208,7 +208,7 @@ const DocumentsContainer = ({ documents, setDocuments }) => {
               <li key={document.id} className="failure__document">
                 <span>{document.name}</span>
                 <Link
-                  to={`/images/failure_${document.failureId}/${document.name}`}
+                  to={`/files/failure_${document.failureId}/${document.name}`}
                   className="failure__file-btn failure__file-btn--download"
                   target="_blank"
                   download
