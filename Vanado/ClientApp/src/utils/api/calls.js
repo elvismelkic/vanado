@@ -5,17 +5,15 @@ const mainUrl = "https://localhost:44325/api/";
 export async function fetchAll(route, query) {
   const URI = `${mainUrl}${route}${query !== undefined ? "?" + query : ""}`;
   const response = await fetch(URI).catch(handleError);
-  const json = await response.json();
 
-  return json.data || json;
+  return await response.json();
 }
 
 export async function fetchOne(route, id) {
   const URI = `${mainUrl}${route}/${id}`;
   const response = await fetch(URI).catch(handleError);
-  const json = await response.json();
 
-  return json.data || json;
+  return await response.json();
 }
 
 export async function addOne(route, data) {
@@ -26,9 +24,7 @@ export async function addOne(route, data) {
     body: JSON.stringify(data),
   }).catch(handleError);
 
-  const json = await response.json();
-
-  return json.data || json;
+  return await response.json();
 }
 
 export async function toggleFailureStatus(id) {
@@ -39,9 +35,7 @@ export async function toggleFailureStatus(id) {
     body: "{}",
   }).catch(handleError);
 
-  const json = await response.json();
-
-  return json.data || json;
+  return await response.json();
 }
 
 export async function deleteOne(route, id) {
@@ -61,9 +55,7 @@ export async function editOne(route, id, data) {
     body: JSON.stringify(data),
   }).catch(handleError);
 
-  const json = await response.json();
-
-  return json.data || json;
+  return await response.json();
 }
 
 export async function upload(files, failureId) {
@@ -80,7 +72,5 @@ export async function upload(files, failureId) {
     body: data,
   }).catch(handleError);
 
-  const json = await response.json();
-
-  return json.data || json;
+  return await response.json();
 }
