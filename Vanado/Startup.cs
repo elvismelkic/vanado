@@ -45,11 +45,6 @@ namespace Vanado
         {
             app.UseExceptionHandler("/error");
 
-            // TODO: Maybe remove.
-            app.UseCors(
-                options => options.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod()
-            );
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
